@@ -22,15 +22,3 @@ function visualizar () {
     exibir ("paginas/visualizar", $meusDados);
 	
 	}
-
-function adicionar () {
-    if (ehPost()) {
-        $nome = $_POST["usuario"];
-        $email = $_POST["email"];
-        $senha = $_POST["senha"];
-        
-       redirecionar ("usuario/index")
-    }else{
-        exibir ("usuario/formulario");
-    }
-    }
